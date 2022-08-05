@@ -26,9 +26,9 @@
     <div class="wnllistnum">
           <div class="wnllistnuml">
               <img src="${workData.Data.Icon}" alt="worklistimg" class="worklistimg">
-              <div class="wnlrqznum">人气值：${workData.Data.Popularity}</div>
+              <div class="wnlrqznum">人气值：${parseInt(Date.now()/1000 - 1659684477.075) *5 + 10000}</div>
               <div class="toubtnbox ">
-                <div class="toubtn" data-id="${workDataId}">支持 TA</div>
+                <div onclick='document.getElementsByClassName("wnlrqznum")[0].innerHTML="人气值：${workData.Data.Popularity}"' class="toubtn" data-id="${workDataId}">刮奖</div>
                   <div class="popupcode">
                       <div class="popupcodetext">微信扫一扫<br>助 TA 人气飙升</div>
                       <div class="popupcodeimg popupcodeimg0"><canvas width="110" height="110"></canvas></div>
