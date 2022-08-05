@@ -37,7 +37,7 @@
           </div>
           <div class="wnllistnumr" onclick="clickWornumktitle('${workDataId}')">
               <div class="wornumktitle" title="${workData.Data.Name}" data-id="${workDataId}">${workData.Data.Name}</div>
-              <div class="workteam" title="ToLiveAHealthyLife">ToLiveAHealthyLife</div>
+              <div class="workteam" title="${workData.Data.GroupName}">${workData.Data.GroupName}</div>
               <div class="workxtlb">${workData.Data.TopicName} | ${workData.Data.CategoryName}</div>
               <div class="workmsg">
                   作品简介：${workData.Data.Message}
